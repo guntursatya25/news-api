@@ -33,15 +33,16 @@
         </div>
 
         <!-- Pagination -->
-        <div class="pagination">
-          <button @click="prevPage" :disabled="currentPage === 1">
+        <!-- <div class="pagination">
+          <button @click="prevPage" class="prev-page" :disabled="currentPage === 1">
             Previous
           </button>
           <span>Page {{ currentPage }} of {{ totalPages }}</span>
-          <button @click="nextPage" :disabled="currentPage === totalPages">
+          <button @click="nextPage" class="next-page" :disabled="currentPage === totalPages">
             Next
           </button>
-        </div>
+        </div> -->
+        <b-pagination v-model="currentPage" :total-rows="totalPages" :per-page="itemsPerPage" class="mt-3" />
       </div>
       <div v-if="loading" class="loading-effect">
         <loading-search/>
