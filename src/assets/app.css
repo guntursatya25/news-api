@@ -1,0 +1,255 @@
+.wrapper p {
+  color: #fff;
+}
+a:hover {
+  color: #fff !important;
+  /* color:#29B6F6 !important; */
+  text-decoration: none !important;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+}
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5em;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+.grid,
+.grid2 {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid:nth-child(1) {
+  grid-row: span 2;
+}
+.grid2:nth-child(3) {
+  grid-row: span 2;
+}
+
+.grid img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.cardnya {
+  height: 100%;
+}
+.card-image {
+  height: 100%;
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1em;
+  /* opacity: 0; */
+  transition: opacity 0.3s ease;
+}
+
+.grid2 .card-overlay2 {
+  transition: opacity 0.3s ease;
+}
+.grid2:nth-child(3) .card-image-img {
+  height: 70%;
+}
+.grid2 .card-image-img {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid2:hover img,
+.grid:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.grid:first-child .card-overlay {
+  /* opacity: 1; */
+  color: #000000;
+}
+
+.grid:hover .card-overlay {
+  opacity: 1;
+}
+.grid:first-child img,
+.grid2:nth-child(3) img {
+  height: 100%;
+}
+
+.grid:first-child .card-image,
+.grid2:nth-child(3) .card-image,
+.grid2:nth-child(3) .cardnya {
+  height: 100%;
+}
+.grid .card-overlay .card-overlay-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.grid .card-overlay-body {
+  left: 0;
+  position: absolute;
+  bottom: 0;
+}
+.grid .card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0;
+  color: #fff;
+  text-decoration: none;
+}
+.grid:first-child .card-title {
+  color: #fff;
+}
+.grid .card-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0;
+  display: flex;
+  /* justify-content: space-between; */
+  line-height: 1em;
+}
+
+.grid .card-overlay .desc {
+  display: none;
+}
+.grid:first-child .card-overlay .desc {
+  display: block;
+}
+
+.grid .card-overlay-body a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.grid .meta-date {
+  margin-left: 10px;
+}
+.grid2 .card-meta-author {
+  color: #fff;
+}
+
+.cardnya2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+.grid2:nth-child(3) .cardnya2{
+  height: 75%;
+}
+.grid2 .card-image2 {
+  height: 60%;
+  position: relative;
+}
+.grid2 img {
+  width: 100%;
+  height: 100%;
+  min-height: 286px;
+  border-radius: 7px;
+}
+.grid2 p,
+.grid2 a {
+  color: #000000;
+}
+.grid2 .card__body {
+  padding: 10px 5px;
+  height: auto;
+}
+.grid2:nth-child(1) .card__body,
+.grid2:nth-child(2) .card__body {
+  padding-bottom: 0;
+}
+.grid2:nth-child(1) .card__body p,
+.grid2:nth-child(2) .card__body p{
+  margin-bottom: 2px !important;
+}
+
+.grid2:not(:nth-child(3)) .card__body p,
+.grid2:not(:nth-child(3)) .card__body h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.grid2 .card-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0 0;
+  color: #fff;
+  text-decoration: none;
+}
+.grid2 .card-overlay2 .card-meta {
+  display: flex;
+  justify-content: space-between;
+}
+.grid2 .card-overlay2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 8px 10px 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.grid2 .card-overlay2 p,
+.grid2 .card-overlay2 a {
+  color: #fff;
+}
+.grid2 .card-meta-author {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 10px;
+}
+.grid2 a:hover {
+  color: #ff2768 !important;
+}
+.grid2 .card__body a {
+  color: #000000 !important;
+}
+.grid .card-meta a {
+  color: #fff !important;
+}
+.grid2:nth-child(1) .desc2,
+.grid2:nth-child(2) .desc2 {
+  /* margin-bottom: 3em; */
+}
+.grid h2,
+.grid h3 {
+  font-size: 1em !important;
+}
+
+.grid2 h3 {
+  font-size: 1em !important;
+}
+
+.grid2:nth-child(3) p {
+  margin: 0 !important;
+}
+.grid2:nth-child(3) .card-image2 {
+  height: 100%;
+}
